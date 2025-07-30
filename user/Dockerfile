@@ -8,5 +8,5 @@ COPY *.js .
 RUN npm install
 RUN apt-get update -y \
     && apt-get install net-tools git -y \
-    && apt-get clean
+    && apt-get clean 
 CMD ["node","server.js"]
